@@ -1,0 +1,31 @@
+{
+  "name": "site-de-aulas-particulares",
+  "version": "1.0.0",
+  "description": "Desafio proposto no Bootcamp Launchbase da Rocketseat para praticar e fixar os conteúdos estudados.",
+  "main": "routes.js",
+  "scripts": {
+    "start": "npm-run-all -p nodemon browsersync",
+    "nodemon": "nodemon server.js",
+    "browsersync": "browser-sync start --proxy http://localhost:5000 --files 'public,views'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LSP-Lucas/site-de-aulas-particulares.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LSP-Lucas/site-de-aulas-particulares/issues"
+  },
+  "homepage": "https://github.com/LSP-Lucas/site-de-aulas-particulares#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "nodemon": "^2.0.4",
+    "npm-run-all": "^4.1.5"
+  }
+}
