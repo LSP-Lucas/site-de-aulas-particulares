@@ -113,3 +113,48 @@ header {
     margin-right: 4px;
     border-radius: 16px;
 }
+
+/* === CREATE - FORM === */
+
+
+input {
+    width: 100%;
+    outline: none;
+    color: #555;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+input[type="radio"] {
+    width: initial;
+    margin-right: 5px;
+}
+
+input::placeholder {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+button[type="submit"] {
+    width: 100%;
+    background-color: #7159c1;
+    color: white;
+    padding: 8px 32px;
+    border-radius: 4px;
+    margin-top: 32px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.item select {
+    color: #555;
+    font-weight: bold;
+    font-size: 16px;
+    outline: none;
+}
+
+.item select option {
+    color: rgba(85, 85, 85, 0.514);
+    font-weight: bold;
+    font-size: 16px;
+}

@@ -1,0 +1,64 @@
+{
+    "teachers": [
+        {
+            "avatar_url": "hhtp://google.com",
+            "id": 1,
+            "name": "Lucas Pedroso",
+            "birth": 644889600000,
+            "grade": "Ensino Médio Completo",
+            "modality": "Presencial",
+            "services": "Vocal, Guitarra",
+            "create_at": 1594306172990
+        },
+        {
+            "avatar_url": "hhtp://google.com",
+            "id": 2,
+            "name": "Lucas Pedroso",
+            "birth": 644889600000,
+            "grade": "Ensino Médio Completo",
+            "modality": "Presencial",
+            "services": "Vocal, Guitarra",
+            "create_at": 1594306293026
+        },
+        {
+            "avatar_url": "hhtp://google.com",
+            "id": 3,
+            "name": "Angular: CLI",
+            "birth": 650160000000,
+            "grade": "Ensino Médio Completo",
+            "modality": "EAD",
+            "services": "Fitness, Natação",
+            "create_at": 1594306339629
+        },
+        {
+            "avatar_url": "hhtp://google.com",
+            "id": 4,
+            "name": "Lucas",
+            "birth": 650160000000,
+            "grade": "Superior Completo",
+            "modality": "EAD",
+            "services": "Fitness, Natação, Atletismo",
+            "create_at": 1594306531901
+        },
+        {
+            "avatar_url": "hhtp://google.com",
+            "id": 5,
+            "name": "Lucas Teste ",
+            "birth": -2189980800000,
+            "grade": "Doutorado",
+            "modality": "Presencial",
+            "services": "Fitness, Natação",
+            "create_at": 1594306655129
+        },
+        {
+            "avatar_url": "hhtp://google.com",
+            "id": 6,
+            "name": "Angular: CLI",
+            "birth": 650160000000,
+            "grade": "Ensino Médio Completo",
+            "modality": "EAD",
+            "services": "Fitness, Natação",
+            "create_at": 1594306712854
+        }
+    ]
+}
