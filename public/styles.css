@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: white;
+    background-color: #060c21;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -15,8 +15,18 @@ header {
     width: 100%;
     background-color: teal;
     padding: 30px;
-    text-align: center;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+header #logo {
+    position: absolute;
+    left: 35px;
+
 }
 
 .links {
@@ -65,7 +75,38 @@ header {
     margin: 45px auto;
     display: grid;
     grid-template-columns: 40% 60%;
-    box-shadow: 10px 0px 30px 8px rgba(0, 0, 0, 0.4);
+    background-color: #060c21;
+    position: relative;
+
+    animation: animacao 300ms ease-out;
+}
+
+.card:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: white;
+    z-index: -1;
+}
+
+.card:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: white;
+    z-index: -2;
+    filter: blur(40px);
+}
+
+.card:before,
+.card:after {
+    background: linear-gradient(235deg, #89ff00, #060c21, #7159c1);
 }
 
 .details {
@@ -73,7 +114,7 @@ header {
 }
 
 .details .item {
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding: 16px 0;
 }
 
@@ -85,13 +126,13 @@ header {
 .details .item div:nth-child(1) {
     font-weight: normal;
     font-size: 14px;
-    color: #777;
+    color: rgb(199, 199, 199);
     line-height: 28px;
     letter-spacing: 0.7px;
 }
 
 .details .item div:nth-child(2) {
-    color: #555;
+    color: rgb(228, 228, 228);
     font-weight: bold;
     font-size: 18px;
 }
@@ -112,6 +153,18 @@ header {
     margin-top: 8px;
     margin-right: 4px;
     border-radius: 16px;
+}
+
+/* === CARD ANIMATION === */
+
+@keyframes animacao {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 /* === CREATE - FORM === */
