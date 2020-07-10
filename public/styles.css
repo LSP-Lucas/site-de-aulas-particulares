@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
 
 * {
     margin: 0;
@@ -13,7 +14,7 @@ body {
 
 header {
     width: 100%;
-    background-color: teal;
+    background-color: #060c21;
     padding: 30px;
     box-sizing: border-box;
     display: flex;
@@ -21,12 +22,47 @@ header {
     align-items: center;
     justify-content: center;
     position: relative;
+    overflow-x: hidden;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+
+    animation: infinite-line 5s linear infinite;
+}
+
+@keyframes infinite-line {
+    0% {
+        left: -100%;
+    }
+    50%,100% {
+        left: 100%;
+    }
 }
 
 header #logo {
     position: absolute;
     left: 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
+header #logo img {
+    width: 60px;
+    height: 60px;
+}
+
+header #logo span {
+    font-family: 'Galada', cursive;
+    color: white;
+    font-size: 24px;
 }
 
 .links {
@@ -49,13 +85,13 @@ header #logo {
 }
 
 .links a:hover {
-    color: tomato;
+    color: #03e9f4;
 }
 
 .links a::after {
     content: "";
     height: 4px;
-    background-color: tomato;
+    background-color: #03e9f4;
     position: absolute;
     bottom: -15px;
     left: 0;
@@ -72,7 +108,7 @@ header #logo {
 .card {
     width: 800px;
     min-height: 400px;
-    margin: 45px auto;
+    margin: 90px auto;
     display: grid;
     grid-template-columns: 40% 60%;
     background-color: #060c21;
@@ -101,7 +137,7 @@ header #logo {
     bottom: -2px;
     background: white;
     z-index: -2;
-    filter: blur(40px);
+    filter: blur(32px);
 }
 
 .card:before,
@@ -144,10 +180,10 @@ header #logo {
 }
 
 .details .item span {
-    color: #555;
+    color: white;
     font-weight: bold;
     font-size: 18px;
-    background-color: yellow;
+    background-color: #ffffff13;
     padding: 8px 16px;
     display: inline-block;
     margin-top: 8px;
@@ -169,13 +205,16 @@ header #logo {
 
 /* === CREATE - FORM === */
 
-
 input {
     width: 100%;
     outline: none;
-    color: #555;
+    color: rgba(255, 255, 255, 0.794);
     font-weight: bold;
     font-size: 18px;
+    border-radius: 8px;
+    background-color: #ffffff13;
+    padding: 8px 8px;
+    box-sizing: border-box;
 }
 
 input[type="radio"] {
@@ -186,6 +225,7 @@ input[type="radio"] {
 input::placeholder {
     font-size: 16px;
     font-weight: normal;
+    padding: 0 8px;
 }
 
 button[type="submit"] {
@@ -193,21 +233,26 @@ button[type="submit"] {
     background-color: #7159c1;
     color: white;
     padding: 8px 32px;
-    border-radius: 4px;
+    border-radius: 16px;
     margin-top: 32px;
     font-size: 16px;
     cursor: pointer;
 }
 
 .item select {
-    color: #555;
+    color: #ffffff;
+    background-color: #ffffff13;
     font-weight: bold;
     font-size: 16px;
     outline: none;
+    border-radius: 8px;
+    padding: 8px 8px;
+    width: 100%;
 }
 
 .item select option {
-    color: rgba(85, 85, 85, 0.514);
+    color: #fff;
     font-weight: bold;
     font-size: 16px;
+    background-color: #060c21;
 }
