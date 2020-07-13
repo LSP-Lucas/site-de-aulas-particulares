@@ -1,5 +1,6 @@
 const fs = require('fs');
 const data = require('./data.json');
+const { age } = require('./utils');
 
 
 // CREATE
@@ -36,5 +37,27 @@ exports.post = function(req, res) {
 
         return res.redirect("/teachers");
     });
+}
+
+
+// SHOW
+
+exports.show = function(req, res) {
+
+    const { id } = req.params;
+
+    const foundTeacher = data.teachers.find(function(teacher){
+        return teacher.id == id;
+    });
+
+    if(!foundTeacher) return res.send("Professor não encontrado!");
+
+    const teacher = {
+        ...foundTeacher,
+        age: age(foundTeacher.birth),
+        services: foundTeacher.services.split(",")
+    }
+
+    return res.render("teachers/show", { teacher });
 
 }
