@@ -5,7 +5,7 @@
             "id": 1,
             "name": "Lucas Pedroso",
             "birth": 644889600000,
-            "grade": "Ensino Médio Completo",
+            "grade": "medio",
             "modality": "Presencial",
             "services": "Vocal, Guitarra",
             "create_at": 1594306172990
@@ -15,7 +15,7 @@
             "id": 2,
             "name": "Lucas Pedroso",
             "birth": 644889600000,
-            "grade": "Ensino Médio Completo",
+            "grade": "medio",
             "modality": "Presencial",
             "services": "Vocal, Guitarra",
             "create_at": 1594306293026
@@ -25,7 +25,7 @@
             "id": 3,
             "name": "Angular: CLI",
             "birth": 650160000000,
-            "grade": "Ensino Médio Completo",
+            "grade": "medio",
             "modality": "EAD",
             "services": "Fitness, Natação",
             "create_at": 1594306339629
@@ -35,7 +35,7 @@
             "id": 4,
             "name": "Lucas",
             "birth": 650160000000,
-            "grade": "Superior Completo",
+            "grade": "superior",
             "modality": "EAD",
             "services": "Fitness, Natação, Atletismo",
             "create_at": 1594306531901
@@ -45,7 +45,7 @@
             "id": 5,
             "name": "Lucas Teste ",
             "birth": -2189980800000,
-            "grade": "Doutorado",
+            "grade": "doutorado",
             "modality": "Presencial",
             "services": "Fitness, Natação",
             "create_at": 1594306655129
@@ -55,7 +55,7 @@
             "id": 6,
             "name": "Angular: CLI",
             "birth": 650160000000,
-            "grade": "Ensino Médio Completo",
+            "grade": "medio",
             "modality": "EAD",
             "services": "Fitness, Natação",
             "create_at": 1594306712854
@@ -65,10 +65,20 @@
             "id": 7,
             "name": "Teste de novo",
             "birth": 644889600000,
-            "grade": "Mestrado",
+            "grade": "mestrado",
             "modality": "EAD",
             "services": "Flexão, Corrida",
             "create_at": 1594687615892
+        },
+        {
+            "avatar_url": "https://images.unsplash.com/photo-1594587639781-a68a2796bb90?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+            "id": 8,
+            "name": "Yesmin Marie",
+            "birth": 621907200000,
+            "grade": "mestrado",
+            "modality": "EAD",
+            "services": "Corrida, Ginastica",
+            "create_at": 1594740361088
         }
     ]
 }
