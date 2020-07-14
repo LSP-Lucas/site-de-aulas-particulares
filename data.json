@@ -59,6 +59,16 @@
             "modality": "EAD",
             "services": "Fitness, Natação",
             "create_at": 1594306712854
+        },
+        {
+            "avatar_url": "https://images.unsplash.com/photo-1594587639781-a68a2796bb90?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+            "id": 7,
+            "name": "Teste de novo",
+            "birth": 644889600000,
+            "grade": "Mestrado",
+            "modality": "EAD",
+            "services": "Flexão, Corrida",
+            "create_at": 1594687615892
         }
     ]
 }
