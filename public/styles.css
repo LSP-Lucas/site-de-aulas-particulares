@@ -147,6 +147,7 @@ header #logo span {
 
 .details {
     padding: 32px;
+    position: relative;
 }
 
 .details .item {
@@ -232,7 +233,8 @@ input::placeholder {
     padding: 0 8px;
 }
 
-button[type="submit"] {
+button[type="submit"],
+a.button {
     width: 100%;
     background-color: #7159c1;
     color: white;
@@ -241,6 +243,15 @@ button[type="submit"] {
     margin-top: 32px;
     font-size: 16px;
     cursor: pointer;
+
+    transition: 0.2s;
+}
+
+button[type="submit"]:hover,
+a.button:hover {
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
 }
 
 .item select {
@@ -259,4 +270,33 @@ button[type="submit"] {
     font-weight: bold;
     font-size: 16px;
     background-color: #060c21;
+}
+
+a.button {
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+}
+
+#edit button[type="submit"] {
+    width: 45%;
+}
+
+#form-delete {
+    position: relative;
+}
+
+#form-delete button[type="submit"] {
+    margin-top: 8px;
+    background-color: lightcoral;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#form-delete button[type="submit"]:hover {
+    color: #255784;
+    background: lightcoral;
+    box-shadow: 0 0 10px lightcoral, 0 0 40px lightcoral, 0 0 80px lightcoral;
 }
