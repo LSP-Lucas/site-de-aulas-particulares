@@ -252,6 +252,7 @@ a.button {
 button[type="submit"]:hover,
 a.button:hover {
     color: #255784;
+    font-weight: bold;
     background: #2196f3;
     box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
 }
@@ -301,6 +302,7 @@ a.button {
     color: #255784;
     background: lightcoral;
     box-shadow: 0 0 10px lightcoral, 0 0 40px lightcoral, 0 0 80px lightcoral;
+    font-weight: bold;
 }
 
 /* INDEX TEACHER */
@@ -356,17 +358,26 @@ tbody tr td:first-child span {
 tbody tr td:last-child a,
 .table-container > a {
     background-color: #7159c1;
-    padding: 8px 16px;
+    padding: 8px 20px;
     text-decoration: none;
     text-transform: uppercase;
     color: white;
     font-size: 12px;
+    font-weight: bold;
     border-radius: 4px;
 }
 
 .table-container > a {
     margin-bottom: 16px;
     display: inline-block;
+}
+
+tbody tr td:last-child a:hover,
+.table-container > a:hover {
+    color: #255784;
+    font-weight: bold;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
 }
 
 .table-container thead tr th:last-child,
