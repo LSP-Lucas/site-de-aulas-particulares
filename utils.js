@@ -22,7 +22,10 @@ module.exports = {
 
         const day = `0${date.getUTCDate()}`.slice(-2);
 
-        return `${year}-${month}-${day}`;
+        return {
+            iso: `${year}-${month}-${day}`,
+            birthDay: `${day}/${month}`
+        };
     },
     graduation: function(grade) {
 
@@ -33,5 +36,17 @@ module.exports = {
             case ('doutorado'): return 'Doutorado'
         }
         
+    },
+    grade: function(grade) {
+        
+        switch(grade) {
+            case ('5f'): return '5º ano do ensino fundamental'
+            case ('6f'): return '6º ano do ensino fundamental'
+            case ('7f'): return '7º ano do ensino fundamental'
+            case ('8f'): return '8º ano do ensino fundamental'
+            case ('1m'): return '1º ano do ensino médio'
+            case ('2m'): return '2º ano do ensino médio'
+            case ('3m'): return '3º ano do ensino médio'
+        }
     }
 }

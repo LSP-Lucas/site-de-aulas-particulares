@@ -13,16 +13,17 @@
 <body>
     <header>
         <div id="logo">
-            <img src="/img/logo.png" alt="Logo da Loja">
+            <a href="/"><img src="/img/logo.png" alt="Logo da Loja"></a>
             <span>Life</span>
          </div>
         <div class="links">
-            <a href="/" class="active">Teachers</a>
+            <a href="/teachers">Teachers</a>
             <a href="/students">Students</a>
         </div>
     </header>
 
     {% block content %} {% endblock content %}
 
+    <script src="/scripts.js"></script>
 </body>
 </html>

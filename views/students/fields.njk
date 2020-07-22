@@ -1,0 +1,93 @@
+<div class="items">
+
+    <div class="item">
+        <div>Avatar URL</div>
+        <div>
+            <input 
+                type="url" 
+                name="avatar_url" 
+                placeholder="http://" 
+                autocomplete="off" 
+                value="{{ student.avatar_url }}">
+        </div>
+    </div>
+
+    <div class="item">
+        <div>Nome completo</div>
+        <div>
+            <input 
+                type="text" 
+                name="name" 
+                autocomplete="off"
+                value="{{ student.name }}">
+        </div>
+    </div>
+
+    <div class="item">
+        <div>Data de nascimento</div>
+        <div>
+            <input 
+                type="date" 
+                name="birth"
+                value="{{ student.birth }}">
+        </div>
+    </div>
+
+    <div class="item">
+        <div>Email</div>
+        <div>
+            <input 
+                type="email" 
+                name="email"
+                value="{{ student.email }}">
+        </div>
+    </div>
+
+    <div class="item">
+        <div>Ano escolar</div>
+        <div>
+            <select name="year_school">
+                <option value="5f"
+                    {% if student.year_school == "5f" %}selected{% endif %}>
+                        5º ano do ensino fundamental
+                </option>
+                <option value="6f"
+                    {% if student.year_school == "6f" %}selected{% endif %}>
+                        6º ano do ensino fundamental
+                </option>
+                <option value="7f"
+                    {% if student.year_school == "7f" %}selected{% endif %}>
+                        7º ano do ensino fundamental
+                </option>
+                <option value="8f"
+                    {% if student.year_school == "8f" %}selected{% endif %}>
+                        8º ano do ensino fundamental
+                </option>
+                <option value="1m"
+                    {% if student.year_school == "1m" %}selected{% endif %}>
+                        1º ano do ensino médio
+                </option>
+                <option value="2m"
+                    {% if student.year_school == "2m" %}selected{% endif %}>
+                        2º ano do ensino médio
+                </option>
+                <option value="3m"
+                    {% if student.year_school == "3m" %}selected{% endif %}>
+                        3º ano do ensino médio
+                </option>
+            </select>
+        </div>
+    </div>
+
+    <div class="item">
+        <div>Carga horária</div>
+        <div>
+            <input 
+                type="number" 
+                name="hours"
+                value="{{ student.hours }}">
+        </div>
+    </div>
+
+    <button type="submit">Salvar</button>
+</div>

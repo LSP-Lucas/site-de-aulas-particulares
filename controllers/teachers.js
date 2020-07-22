@@ -1,10 +1,35 @@
 const fs = require('fs');
-const data = require('./data.json');
-const { age, date, graduation } = require('./utils');
+const data = require('../data.json');
+const { age, date, graduation } = require('../utils');
 const Intl = require('intl');
 
 
+// LIST
+
+exports.index = function(req, res) {
+
+    let teachers = [...data.teachers];
+    let list_teachers = [];
+
+    for(const teacher of teachers) {
+        teachers = {
+            ...teacher,
+            services: teacher.services.split(",")
+        }
+        list_teachers.push(teachers);
+    }
+
+    return res.render("teachers/index", { teachers: list_teachers });
+}
+
 // CREATE
+
+exports.create = function(req, res) {
+
+    return res.render("teachers/create");
+}
+
+// PUT
 
 exports.post = function(req, res) {
 
@@ -77,7 +102,7 @@ exports.edit = function(req, res) {
 
     const teacher = {
         ...foundTeacher,
-        birth: date(foundTeacher.birth)
+        birth: date(foundTeacher.birth).iso
     }
 
     return res.render('teachers/edit', { teacher });
